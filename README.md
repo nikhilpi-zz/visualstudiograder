@@ -6,12 +6,12 @@ This python script unzips, builds, and tests Visual studio projects and add grad
 * Visual Studio 12
 
 ## Setup
-### Files
+#### Files
 * Place Canvas grade book export in root
 * Download assignments and place individual zips in `/assignments` . Note if students did not upload zips and just single files, place files in `/unzipped`.
 * Place template project in `/template `
 
-### Params
+#### Params
 All settings are set in `main()`
 * Set arg for `loadGradeBook()` to the name of the gradebook file
 * Set Params
@@ -22,7 +22,7 @@ All settings are set in `main()`
   * `dllPath` - Location of test dll. This will appear after you build the template in `./template/projectName/bin/Debug/`
 * Set the last param of `enterScore` to the column number of the assignment in the gradebook
 
-### Fall back file (optional)
+#### Fall back file (optional)
 If the turned in files had an optional file, you can use this as a fallback default file. Only one back up file is supported. To set one up, follow these steps:
 * Place file in
 * In `params` set `defaultFile` to true
@@ -34,7 +34,7 @@ Running the script can take a couple tries to finish. Some assignments may not s
 * run the script
 * Manually grade a subset to verify the grades are valid.
 
-### Transfering Grades
+#### Transfering Grades
 The final grades will be exported to `newgrades.csv` and each students build outputs will be in `/results`. To import the grades back into canvas:
 * Mute the assignment on Canvas
 * Open `newgrades.csv`, copy the contents
